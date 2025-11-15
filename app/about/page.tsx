@@ -21,7 +21,7 @@ export default function About() {
           </p>
           
           <p>
-            He is currently pursuing a Master's degree in Photography at the Łódź Film School, 
+            He is currently pursuing a Master&apos;s degree in Photography at the Łódź Film School, 
             where he continues to develop long-term projects. His ongoing series Terka documents 
             the self sufficient lifestyle and fading traditions of people living close to nature 
             in southeastern Poland. Working primarily with analog processes, Konrad values its 
@@ -38,7 +38,7 @@ export default function About() {
               <div className="mb-1">
                 <span className="font-medium">Łódź Film School (PWSFTviT)</span>
               </div>
-              <div className="text-gray-600">Master's Degree in Photography 2025–ongoing</div>
+              <div className="text-gray-600">Master&apos;s Degree in Photography 2025–ongoing</div>
             </div>
 
             <div>
