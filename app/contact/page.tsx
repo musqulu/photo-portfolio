@@ -11,19 +11,19 @@ export default function Contact() {
             <div>
               <span className="text-gray-600">Email:</span>{' '}
               <a href="mailto:hello@konradgalan.com" className="hover:text-red-500 transition-colors">
-                hello@konradgalan.com
+                galankonrad@gmail.com
               </a>
             </div>
             
             <div>
               <span className="text-gray-600">Instagram:</span>{' '}
               <a 
-                href="https://instagram.com/konradgalan" 
+                href="https://instagram.com/konisupertramp" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-red-500 transition-colors"
               >
-                @konradgalan
+                @konisupertramp
               </a>
             </div>
           </div>

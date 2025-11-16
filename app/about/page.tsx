@@ -41,9 +41,9 @@ export default function About() {
               <div className="text-gray-600">Master&apos;s Degree in Photography 2025–ongoing</div>
             </div>
 
-            <div>
+            <div> 
               <div className="mb-1">
-                <span className="font-medium">Sputnik Photos Mentorship Program (2023–2024)</span>
+                <span className="font-medium">Sputnik Photos Mentorship Program (2024–2025)</span>
               </div>
               <div className="text-gray-600 mb-2">Mentor: Jan Brykczyński</div>
               <div className="text-gray-700">

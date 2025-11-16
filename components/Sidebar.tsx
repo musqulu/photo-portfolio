@@ -9,8 +9,6 @@ const projectPreviews: { [key: string]: string } = {
   'homeoffice': '/images/homeoffice/Homeoffice-01.jpg',
   'terka': '/images/terka/Terka-01.jpg',
   'poles': '/images/poles/PHSQUATWAW111194-3-13.jpg',
-  'norwegian-summer': '/images/norwegian_summer/NorwegianSummer-1.jpeg',
-  'homeoffice-zine': '/images/homeoffice/Homeoffice-01.jpg',
 }
 
 export default function Sidebar() {
@@ -39,11 +37,6 @@ export default function Sidebar() {
     { name: 'Homeoffice', id: 'homeoffice' },
     { name: 'Terka', id: 'terka' },
     { name: 'Poles', id: 'poles' },
-    { name: 'Norwegian summer', id: 'norwegian-summer' },
-  ]
-
-  const bookProjects = [
-    { name: 'Homeoffice - zine', id: 'homeoffice-zine' },
   ]
 
   return (
@@ -121,28 +114,6 @@ export default function Sidebar() {
           </ul>
         </div>
 
-        <div>
-          <h2 className="text-sm font-semibold text-black mb-3 uppercase tracking-wide">
-            BOOKS
-          </h2>
-          <ul className="space-y-2">
-            {bookProjects.map((project) => (
-              <li key={project.id} className="relative">
-                <Link
-                  href={`/?project=${project.id}`}
-                  className="text-sm text-gray-700 hover:text-red-500 transition-colors block"
-                  onClick={() => setIsOpen(false)}
-                  onMouseEnter={(e) => handleMouseEnter(project.id, e)}
-                  onMouseMove={handleMouseMove}
-                  onMouseLeave={() => setHoveredProject(null)}
-                >
-                  {project.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
         {/* Footer Links */}
         <div className="mt-12 space-y-2">
           <Link
@@ -164,7 +135,7 @@ export default function Sidebar() {
         {/* Instagram Icon */}
         <div className="mt-6">
           <a
-            href="https://instagram.com/konradgalan"
+            href="https://instagram.com/konisupertramp"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-gray-700 hover:text-red-500 transition-colors"
@@ -196,6 +167,8 @@ export default function Sidebar() {
               alt={hoveredProject}
               fill
               className="object-cover"
+              quality={75}
+              sizes="80px"
             />
           </div>
         </div>

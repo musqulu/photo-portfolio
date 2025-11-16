@@ -20,16 +20,6 @@ const projectDescriptions: { [key: string]: { title: string; description: string
     description: 'A photographic exploration of contemporary Polish identity. This series examines what it means to be Polish in the 21st century, navigating between tradition and modernity, rural and urban, past and present. Through portraits and landscapes, the work investigates the complex relationship between personal and national identity.',
     year: '2024'
   },
-  'homeoffice-zine': {
-    title: 'Homeoffice - zine',
-    description: 'Self-published artist book exploring themes of remote work, digital burnout, and productivity culture. The zine combines photography with visual essays to create a personal narrative about the psychological impact of constant connectivity. Limited edition, hand-bound.',
-    year: '2024'
-  },
-  'norwegian-summer': {
-    title: 'Norwegian summer',
-    description: 'A photographic exploration of Norwegian summer landscapes and light. Documenting the unique quality of Nordic summer where the sun barely sets, creating an otherworldly atmosphere. The series captures the interplay between vast nature, minimal human presence, and the eternal twilight of northern latitudes.',
-    year: '2024'
-  },
 }
 
 // Project categories with different images
@@ -67,28 +57,6 @@ const projects: { [key: string]: Array<{ id: number; src: string; title: string;
     { id: 26, src: '/images/poles/Poles-4.jpg', title: 'Poles 06', info: 'Polish landscape, 2024' },
     { id: 27, src: '/images/poles/Poles-5.jpg', title: 'Poles 07', info: 'National identity, 2024' },
     { id: 28, src: '/images/poles/Poles-6.jpg', title: 'Poles 08', info: 'Cultural exploration, 2024' },
-  ],
-  'homeoffice-zine': [
-    { id: 29, src: '/images/homeoffice/Homeoffice-01.jpg', title: 'Homeoffice Zine - Cover', info: 'Self-published, 2024' },
-    { id: 30, src: '/images/homeoffice/Homeoffice-02.jpg', title: 'Homeoffice Zine - Spread 01', info: 'Personal protest against productivity culture' },
-    { id: 31, src: '/images/homeoffice/Homeoffice-03.jpg', title: 'Homeoffice Zine - Spread 02', info: 'Exploration of burnout' },
-  ],
-  'norwegian-summer': [
-    { id: 32, src: '/images/norwegian_summer/NorwegianSummer-1.jpeg', title: 'Norwegian Summer 01', info: 'Midnight sun, Norway 2024' },
-    { id: 33, src: '/images/norwegian_summer/NorwegianSummer-3.jpeg', title: 'Norwegian Summer 02', info: 'Nordic landscape, 2024' },
-    { id: 34, src: '/images/norwegian_summer/NorwegianSummer-5.jpeg', title: 'Norwegian Summer 03', info: 'Fjord twilight, 2024' },
-    { id: 35, src: '/images/norwegian_summer/NorwegianSummer-6.jpeg', title: 'Norwegian Summer 04', info: 'Mountain light, 2024' },
-    { id: 36, src: '/images/norwegian_summer/NorwegianSummer-7.jpeg', title: 'Norwegian Summer 05', info: 'Coastal beauty, 2024' },
-    { id: 37, src: '/images/norwegian_summer/NorwegianSummer-8.jpeg', title: 'Norwegian Summer 06', info: 'Northern twilight, 2024' },
-    { id: 38, src: '/images/norwegian_summer/NorwegianSummer-9.jpeg', title: 'Norwegian Summer 07', info: 'Endless daylight, 2024' },
-    { id: 39, src: '/images/norwegian_summer/NorwegianSummer-10.jpeg', title: 'Norwegian Summer 08', info: 'Arctic summer, 2024' },
-    { id: 40, src: '/images/norwegian_summer/NorwegianSummer-11.jpeg', title: 'Norwegian Summer 09', info: 'Nordic nature, 2024' },
-    { id: 41, src: '/images/norwegian_summer/NorwegianSummer-12.jpeg', title: 'Norwegian Summer 10', info: 'Midnight glow, 2024' },
-    { id: 42, src: '/images/norwegian_summer/NorwegianSummer-13.jpeg', title: 'Norwegian Summer 11', info: 'Summer nights, 2024' },
-    { id: 43, src: '/images/norwegian_summer/NorwegianSummer-14.jpeg', title: 'Norwegian Summer 12', info: 'Eternal light, 2024' },
-    { id: 44, src: '/images/norwegian_summer/NorwegianSummer-15.jpeg', title: 'Norwegian Summer 13', info: 'Northern beauty, 2024' },
-    { id: 45, src: '/images/norwegian_summer/NorwegianSummer-16.jpeg', title: 'Norwegian Summer 14', info: 'Scandinavian summer, 2024' },
-    { id: 46, src: '/images/norwegian_summer/NorwegianSummer-17.jpeg', title: 'Norwegian Summer 15', info: 'Nordic light, 2024' },
   ],
 }
 
@@ -159,7 +127,9 @@ export default function ImageViewer({ projectId = 'homeoffice' }: ImageViewerPro
               alt={currentImage.title}
               fill
               className="object-contain"
-              priority
+              priority={currentIndex === 0}
+              quality={90}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 2400px"
             />
           </div>
         </div>
