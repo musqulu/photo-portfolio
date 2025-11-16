@@ -120,7 +120,7 @@ export default function ImageViewer({ projectId = 'homeoffice' }: ImageViewerPro
         </div>
       ) : (
         /* Image View */
-        <div className="relative w-full h-full flex items-center justify-center p-12">
+        <div className="relative w-full h-full flex items-center justify-center p-0 md:p-12">
           <div className="relative max-w-5xl max-h-full w-full h-full">
             <Image
               src={currentImage.src}

@@ -14,7 +14,7 @@ export default function About() {
           </p>
           
           <p>
-            Sputnik Photos mentorship program graduate under Jan Brykczyński where he worked on 
+            Sputnik Photos mentorship program graduate where he worked on 
             homeoffice a project about burnout and productivity culture. His projects often blend 
             personal experience with social observation, searching for meaning within small communities, 
             solitude, and the natural world.
@@ -25,7 +25,7 @@ export default function About() {
             where he continues to develop long-term projects. His ongoing series Terka documents 
             the self sufficient lifestyle and fading traditions of people living close to nature 
             in southeastern Poland. Working primarily with analog processes, Konrad values its 
-            rhythm and physicality in the age of screens.
+            rhythm and physicality in the digital age.
           </p>
         </div>
 
